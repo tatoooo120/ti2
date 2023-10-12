@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://img.freepik.com/premium-vector/construction-helmet-icon-flat-style-safety-cap-vector-illustration-isolated-background-worker-hat-sign-business-concept_157943-615.jpg" type="image/jpeg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstruTech</title>
+    <!-- Link para os arquivos CSS e JavaScript do Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets\Scripts\estoque.js"></script>
+
+    <!-- Link para o arquivo de estilo personalizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;0,600;0,700;1,1" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">ConstruTech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Sobre Nós</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header> 
+    <section class="container">
+      <h2 class="mb-0 mt-5">Análise de Estoque</h2>
+      <hr class="mt-2">   
+  </section>
+  <section class="container">
+    <div>
+        <a id = "switchSection" href="ordemDeCompra.html"><button type="button" class="btn btn-dark">Realizar Ordem de Compra</button></a>
+        <a id = "switchSection" href="cadastroEstoque.html"><button type="button" class="btn btn-dark">Adicionar Produto Ao Estoque</button></a>
+    </div>
+</section>
+<section id = "conteudo">
+
+</section>
+    <div class="container mt-5">
+        <h3>Tabela de Produtos</h3>
+        <table class="table table-bordered">
+          <thead class="thead-dark">
+            <tr>
+                <th>ID do produto</th>
+                <th>Nome do produto</th>
+                <th>Foto do produto</th>
+                <th>Categoria do produto</th>
+                <th>Quantidade Em Estoque</th>
+                <th>Valor</th>
+                <th>Edição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os dados do formulário de cadastro de produtos serão inseridos aqui -->
+        </tbody>
+        
+        </table>
+    </div>
+  <script>
+            window.addEventListener("load", adicionarProdutosATabela);
+  </script>
+  
+</body>
+</html>
